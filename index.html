@@ -158,6 +158,7 @@
                 <div class="card-body">
                   <h3 class="card-title" style="color: #0a3370; font-size: 1.25rem; font-weight: 700">Spotify Premium Student with Hulu</h3>
                   <p class="card-text">Music and TV — better together for one discounted rate. With Spotify Premium, listen to millions of songs, offline and without ad interruptions. On Hulu, watch full seasons of exclusively streaming series, current-season episodes, hit movies and Hulu Originals. </p>
+                  <a class="discount-link btn btn-primary" href="https://www.spotify.com/us/student/"> View more </a>
                 </div>
               </div>
             </div>
@@ -206,47 +207,56 @@
       {
         "title": "Corporate Shopping ",
         "content": "Southern New Hampshire University students are eligible for unbeatable deals at over 250 of the world's best retailers. Gain access to student pricing, everyday discounts, private offers, Friends & Family, and more!",
-        "imgSrc": "./resources/images/Corporate Chopping.png" // Example URL, replace with your own image URL
+        "imgSrc": "./resources/images/Corporate Chopping.png",
+        "link" : "https://corporateshopping.com/student-discounts/southern-new-hampshire-university"
       },
       {
         "title": "Dell Technologies",
         "content": "SNHU students gain access to specialty pricing, exclusive offers, and early access for special events. Students can even shop recommended computer solutions by major. Love your purchase or return it within 30 days.",
-        "imgSrc": "./resources/images/Dell Laptop.png" // Example URL, replace with your own image URL
+        "imgSrc": "./resources/images/Dell Laptop.png",
+        "link" : "https://www.dell.com/en-us/lp/snhu?link_number=126278267&c=us&l=en&tfcid=4583554&cid=316360&lid=5993986&dgc=ms&cpn=ArmMppM_ArmMppCP_ArmMppS_ArmMppVAR&ACCT=595730266#Student-Benefits"
       },
       {
         "title": "Apple",
         "content": "Discounted educational pricing is available to current and newly accepted SNHU students and their parents.",
-        "imgSrc": "./resources/images/Apple.png" // Example URL, replace with your own image URL
+        "imgSrc": "./resources/images/Apple.png",
+        "link" : "https://www.apple.com/us_edu_348988/store"
       },
       {
         "title": "FREE Microsoft 365 Software Suite",
         "content": "SNHU can sign up for Office 365 Education for free, including Word, Excel, PowerPoint, OneNote, and now Microsoft Teams, plus additional classroom tools. Use your valid SNHU email address to get started today.",
-        "imgSrc": "./resources/images/MIcrosoft.png" // Example URL, replace with your own image URL
+        "imgSrc": "./resources/images/MIcrosoft.png",
+        "link" : "https://www.microsoft.com/en-us/education/products/office?ms.officeurl=getoffice365?ms.officeurl=getoffice365"
       },
       {
         "title": "FREE Access to Academic Journals and Research Databases",
         "content": "The SNHU Shapiro Library offers students online access to over 250 databases, including full-text journals, magazines, reports, and newspapers. The Management and Strategy Institute (MSI) provides a 10% discount to all SNHU students and alumni.  To receive the discount, you can use the coupon code below when you register with MSI.  You MUST use your student email address from Southern New Hampshire University when you register.",
-        "imgSrc": "./resources/images/Shapiro Library.png" // Example URL, replace with your own image URL
+        "imgSrc": "./resources/images/Shapiro Library.png",
+        "link": "https://libguides.snhu.edu/az.php"
       },
       {
         "title": "MSI Six Sigma Certifications & Online Professional Development Training",
         "content": "SNHU students and alumni are eligible for 10% off on Six Sigma certification and other business leadership programs by The Management and Strategy Institute (MSI).",
-        "imgSrc": "./resources/images/MSI.png" // Example URL, replace with your own image URL
+        "imgSrc": "./resources/images/MSI.png",
+        "link" : "https://www.msicertified.com/southern-new-hampshire-university-discount/"
       },
       {
         "title": "Adobe Creative Cloud Student Edition Annual Subscription",
         "content": "An Adobe® Creative Cloud™ Student and Teacher Edition membership gives you access to all the latest and greatest Adobe creative tools, plus online services* and other new apps as they’re released. For a low monthly price – highly discounted for SNHU students – you get the freedom to create anything you can imagine.",
-        "imgSrc": "./resources/images/Adobe Creative Cloud.png" // Example URL, replace with your own image URL
+        "imgSrc": "./resources/images/Adobe Creative Cloud.png",
+        "link" : "https://snhu.onthehub.com/WebStore/OfferingDetails.aspx?o=85f84bde-4ec0-e511-9414-b8ca3a5db7a1"
       },
       {
         "title": "FREE Access to Kanopy",
         "content": "SNHU students can enjoy free access thousands of critically acclaimed movies, inspiring documentaries, award-winning foreign films and more.",
-        "imgSrc": "./resources/images/Kanopy.png" // Example URL, replace with your own image URL
+        "imgSrc": "./resources/images/Kanopy.png",
+        "link" : "https://www.kanopy.com/en/snhu"
       },
       {
         "title": "Amazon Prime for SNHU Students",
         "content": "SNHU students are eligible for substantial discounts on Amazon Prime. Think shopping, entertainment, flights and hotels, productivity, gaming and more! ",
-        "imgSrc": "./resources/images/Prime Student.png" // Example URL, replace with your own image URL
+        "imgSrc": "./resources/images/Prime Student.png",
+        "link" : "https://www.amazon.com/Amazon-Student/b?ie=UTF8&node=668781011"
       },
     ];
 
@@ -268,6 +278,7 @@
       newCard.querySelector('.card-title').textContent = cardData.title;
       newCard.querySelector('.card-text').textContent = cardData.content;
       newCard.querySelector('img').src = cardData.imgSrc;
+      newCard.querySelector('.discount-link').href = cardData.link;
 
       // Append the new card to the row
       cardRow.appendChild(newCard);
